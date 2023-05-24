@@ -14,7 +14,7 @@ body {
 header {
     height: 6.4rem;
     width: 100%;
-    background-color: bisque;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +46,54 @@ section {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    
+}
+#home .textos h1{
+    font-size: 5.5rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+    
+}
+#home .textos h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
 }
 
+#home .textos h2{
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 2.8rem;
+}
+#home .textos button {
+    width: 35rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 2.5rem;
+    margin-bottom: 2.0rem;
+
+}
+#home .textos{
+    margin-top: 6rem;
+    margin-left:19rem;
+
+}
+#home .textos button .material-symbols-outlined {
+    padding-right: 1rem;
+    font-size: 3rem !important;
+
+}
+#home .textos p {
+    font-size: 1.4rem;
+    
+
+}
 .black {
     background-color: black;
     color: white;
