@@ -37,6 +37,8 @@ a {
 main {
     height: 100%;
 }
+
+
 section {
     padding-top: 6.4rem;
 }
@@ -81,6 +83,12 @@ section {
     cursor: pointer;
     
 }
+
+#home .textos button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+
+    
+}
 #home .textos button a {
     color: white;
 }
@@ -97,7 +105,6 @@ section {
 }
 #home .textos p {
     font-size: 1.4rem;
-
 
 }
 .lista-imagens{
@@ -134,12 +141,9 @@ height: 35rem;
 }
 
 #O-que-e-sh .textos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 } 
-
-#O-que-e-sh .textos #textos-esquerda, #O-que-e-sh .textos #textos-direita {
-    width: 50%;
-}
 
 #O-que-e-sh .textos #textos-esquerda {
     margin-right: 4rem;
@@ -181,7 +185,93 @@ margin-bottom: 2rem;
 }    
 #melhores-jogos{
     background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22?$2400px$);
-    height: 50%;
+    height: 55%;
     background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6rem 25rem;
+    color: white;
+
     
+}
+#melhores-jogos #direita img{
+    width: 75rem;
+    
+}   
+#melhores-jogos #esquerda h1{
+    font-size: 4.5rem;
+    margin: 7rem 0 2rem 0;
+    font-weight: 300;
+}   
+#melhores-jogos #esquerda p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}   
+#melhores-jogos #esquerda{
+    padding-right: 7rem
+}
+#melhores-jogos #esquerda button{
+    height: 5rem;
+    width: 25rem;
+    border: none;
+    border-radius: 2.5rem;
+}   
+#melhores-jogos #esquerda button a{
+   color: black;
+}   
+#melhores-jogos #esquerda button a:visited {
+    color: black;
+ }   
+ #melhores-jogos #esquerda button :hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}   
+
+footer{
+    height: 74%;
+    background-color: rgb(0, 67, 156);
+    color: white;
+    padding: 1rem 7rem 
+}
+
+footer .logo p a{
+    color: white;
+    font-size: 1.5rem;
+
+}
+footer .logo p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+footer .logo{
+    border-bottom: 0.1rem solid white;
+
+}
+
+footer .lista-informacoes {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns:repeat(6, 1fr)
+}
+footer .lista-informacoes h1{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+footer .lista-informacoes ul li {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+footer .lista-informacoes ul li a{
+    font-size: 1.4rem;
+    color: white;
+}
+footer .lista-informacoes ul li a:visited{
+    color: white;
+}
+footer #conectar .social-midia{
+    display: flex;
+}
+footer #conectar .social-midia li{
+    padding: 1.5rem;
+    font-size: 3rem;
 }
