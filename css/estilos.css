@@ -7,22 +7,36 @@ html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
 }
 
 body {
     height: 100vh;
 }
-header {
+
+h1,h2,h3,p,a, i, a:visited,span{
+    color:white;
+    text-decoration: none;
+}
+a,p{
+    font-size: 1.4rem;
+
+}
+#header {
     height: 6.4rem;
     width: 100%;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
 }
-header ul {
+#header, #home .textos button, header ul, .lista-imagens, footer #conectar .social-midia, .sony .imagens, .termo-uso ul {
     display: flex;
+
+}
+
+#header, #home .textos button {
+    justify-content: center;
+    align-items: center;
+
 }
 
 ul li {
@@ -30,9 +44,13 @@ ul li {
     padding: 0 1.8rem;
     
 }
-a {
-    text-decoration: none;
+#header a, #home .textos h3, #home .textos button, #melhores-jogos #esquerda p, footer .lista-informacoes h1 {
     font-size: 1.8rem;
+}
+
+#header a {
+    color: black;
+    font-weight: 400;
 }
 main {
     height: 100%;
@@ -58,7 +76,6 @@ section {
     
 }
 #home .textos h3{
-    font-size: 1.8rem;
     margin-bottom: 1.8rem;
 }
 
@@ -70,18 +87,14 @@ section {
 #home .textos button {
     width: 35rem;
     height: 4rem;
-    font-size: 1.8rem;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
     border: none;
-    display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     padding: 0 2.5rem;
     margin-bottom: 2.0rem;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 #home .textos button:hover {
@@ -89,9 +102,7 @@ section {
 
     
 }
-#home .textos button a {
-    color: white;
-}
+
 #home .textos{
     margin-top: 6rem;
     margin-left:19rem;
@@ -103,32 +114,25 @@ section {
     font-size: 3rem !important;
 
 }
-#home .textos p {
-    font-size: 1.4rem;
 
-}
 .lista-imagens{
-    display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.lista-imagens .imagem{
-width: 58rem;
-height: 35rem;
-}
+
 .imagem img{
-    height: inherit;
-    width: inherit;
+    margin: 5rem 0;
+    width: 58rem;
+    height: 35rem;
     border-radius: 3rem;
-    padding: 0 0.8rem;
+    padding: 0 1rem;
+    
 }
-.black {
-    background-color: black;
-    color: white;
-}
-.white {
-    background-color:  white;
-    color: black;
+
+.imagem img:hover{
+   transition: 0.2s;
+   transform: scale(1.03);
+    
 }
 
 #O-que-e-sh{
@@ -136,7 +140,6 @@ height: 35rem;
     background-size:cover;
     height: 80%;
     background-position: center;
-    color: white;
     padding: 7rem 46rem;
 }
 
@@ -190,7 +193,7 @@ margin-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 6rem 25rem;
-    color: white;
+    
 
     
 }
@@ -204,7 +207,6 @@ margin-bottom: 2rem;
     font-weight: 300;
 }   
 #melhores-jogos #esquerda p{
-    font-size: 1.8rem;
     margin-bottom: 2rem;
 }   
 #melhores-jogos #esquerda{
@@ -216,12 +218,9 @@ margin-bottom: 2rem;
     border: none;
     border-radius: 2.5rem;
 }   
-#melhores-jogos #esquerda button a{
+#melhores-jogos #esquerda button a, #melhores-jogos #esquerda button a:visited{
    color: black;
 }   
-#melhores-jogos #esquerda button a:visited {
-    color: black;
- }   
  #melhores-jogos #esquerda button :hover{
     background-color: rgba(255, 255, 255, 0.2);
 }   
@@ -229,12 +228,10 @@ margin-bottom: 2rem;
 footer{
     height: 74%;
     background-color: rgb(0, 67, 156);
-    color: white;
     padding: 1rem 7rem 
 }
 
 footer .logo p a{
-    color: white;
     font-size: 1.5rem;
 
 }
@@ -250,10 +247,11 @@ footer .logo{
 footer .lista-informacoes {
     padding: 2rem 0;
     display: grid;
-    grid-template-columns:repeat(6, 1fr)
+    grid-template-columns:repeat(6, 1fr);
+    border-bottom: 0.1rem solid white;
+    
 }
 footer .lista-informacoes h1{
-    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
@@ -261,17 +259,36 @@ footer .lista-informacoes ul li {
     padding: 0;
     margin-bottom: 1rem;
 }
-footer .lista-informacoes ul li a{
-    font-size: 1.4rem;
-    color: white;
-}
-footer .lista-informacoes ul li a:visited{
-    color: white;
-}
-footer #conectar .social-midia{
-    display: flex;
-}
+
 footer #conectar .social-midia li{
     padding: 1.5rem;
     font-size: 3rem;
+}
+.sony{
+    line-height: 2rem;
+    border-bottom: solid 0.1rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid white;
+}
+
+.sony .imagens{
+    justify-content: space-between;
+}
+
+.sony .imagens #certificado{
+width: 6rem;
+}
+
+
+.sony a{
+    text-decoration: underline
+}
+
+.termo-uso ul {
+    justify-content:flex-end;
+    padding-left: 2rem;
+}
+.termo-uso ul li{
+  padding: 0 0 0 0.5rem;
+  padding-top: 3rem;
 }
